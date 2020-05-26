@@ -1,0 +1,34 @@
+// Atmel touchscreen for the 7inch capacitive display orderable at Toradex. Use this devicetree on the Aster board.
+
+/dts-v1/;
+/plugin/;
+/ {
+	compatible = "toradex,colibri-imx7d-emmc";
+	fragment@0 {
+		target = <&i2c4>;
+		__overlay__ {
+			atmel_mxt_ts: atmel_mxt_ts@4a {
+				compatible = "atmel,maxtouch";
+				reg = <0x4a>;
+				interrupt-parent = <&gpio2>;
+				interrupts = <15 2>;
+				reset-gpios = <&gpio2 28 0>;
+				status = "okay";
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <&pwm2>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@2 {
+		target = <&pwm3>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+};
