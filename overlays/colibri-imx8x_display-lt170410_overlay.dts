@@ -19,15 +19,15 @@
 	data-mapping = "bgr666";
 
 	panel-timing {
-		clock-frequency = <33260000>;
-		hactive = <800>;
-		vactive = <480>;
-		hback-porch = <88>;
-		hfront-porch = <40>;
-		vback-porch = <32>;
-		vfront-porch = <13>;
-		hsync-len = <48>;
-		vsync-len = <3>;
+		clock-frequency = <68930000>;
+		hactive = <1280>;
+		vactive = <800>;
+		hback-porch = <64>;
+		hfront-porch = <64>;
+		vback-porch = <5>;
+		vfront-porch = <5>;
+		hsync-len = <40>;
+		vsync-len = <6>;
 
 		de-active = <1>;
 		hsync-active = <0>;
