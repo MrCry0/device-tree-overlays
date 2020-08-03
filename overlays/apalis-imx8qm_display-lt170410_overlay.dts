@@ -4,44 +4,38 @@
 /plugin/;
 / {
 	compatible = "toradex,apalis-imx8qm";
-	fragment@0 {
-		target = <&ldb2>;
-		__overlay__ {
-			status = "okay";
-		};
-	};
+};
 
-	fragment@1 {
-		target = <&ldb2_phy>;
-		__overlay__ {
-			status = "okay";
-		};
-	};
+&ldb2 {
+	status = "okay";
+};
 
-	fragment@2 {
-		target-path = "/lvds1_panel";
-		__overlay__ {
-			status = "okay";
-			compatible = "panel-lvds";
+&ldb2_phy {
+	status = "okay";
+};
 
-			data-mapping = "vesa-24";
-			width-mm = <1280>;
-			height-mm = <800>;
+&{/lvds1_panel} {
+	status = "okay";
+	compatible = "panel-lvds";
 
-			panel-timing {
-				clock-frequency = <68930000>;
-				hactive = <1280>;
-				vactive = <800>;
-				hback-porch = <64>;
-				hfront-porch = <64>;
-				vback-porch = <5>;
-				vfront-porch = <5>;
-				hsync-len = <40>;
-				vsync-len = <6>;
-				hsync-active = <0>;
-				vsync-active = <0>;
-				pixelclk-active = <0>;
-			};
-		};
+	data-mapping = "vesa-24";
+	width-mm = <1280>;
+	height-mm = <800>;
+
+	panel-timing {
+		clock-frequency = <68930000>;
+		hactive = <1280>;
+		vactive = <800>;
+		hback-porch = <64>;
+		hfront-porch = <64>;
+		vback-porch = <5>;
+		vfront-porch = <5>;
+		hsync-len = <40>;
+		vsync-len = <6>;
+
+		hsync-active = <0>;
+		vsync-active = <0>;
+		pixelclk-active = <0>;
 	};
 };
+
