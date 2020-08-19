@@ -2,33 +2,32 @@
 
 /dts-v1/;
 /plugin/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+
 / {
 	compatible = "toradex,colibri-imx7d-emmc";
-	fragment@0 {
-		target = <&i2c4>;
-		__overlay__ {
-			atmel_mxt_ts: atmel_mxt_ts@4a {
-				compatible = "atmel,maxtouch";
-				reg = <0x4a>;
-				interrupt-parent = <&gpio2>;
-				interrupts = <15 2>;
-				reset-gpios = <&gpio2 28 0>;
-				status = "okay";
-			};
-		};
-	};
+};
 
-	fragment@1 {
-		target = <&pwm2>;
-		__overlay__ {
-			status = "disabled";
-		};
-	};
+&i2c4 {
+	#address-cells = <1>;
+	#size-cells = <0>;
 
-	fragment@2 {
-		target = <&pwm3>;
-		__overlay__ {
-			status = "disabled";
-		};
+	atmel_mxt_ts: atmel_mxt_ts@4a {
+		compatible = "atmel,maxtouch";
+		reg = <0x4a>;
+		interrupt-parent = <&gpio2>;
+		interrupts = <15 IRQ_TYPE_EDGE_FALLING>;
+		reset-gpios = <&gpio2 28 GPIO_ACTIVE_HIGH>;
+		status = "okay";
 	};
+};
+
+&pwm2 {
+	status = "disabled";
+};
+
+&pwm3 {
+	status = "disabled";
 };
