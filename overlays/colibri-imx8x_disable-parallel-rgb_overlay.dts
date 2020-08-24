@@ -7,9 +7,12 @@
 /plugin/;
 / {
 	compatible = "toradex,colibri-imx8qxp";
-};
 
-&adma_lcdif {
-	status = "dsabled";
-};
+	fragment@0 {
+		target = <&adma_lcdif>;
 
+		__overlay__ {
+			status = "dsabled";
+		};
+	};
+};
