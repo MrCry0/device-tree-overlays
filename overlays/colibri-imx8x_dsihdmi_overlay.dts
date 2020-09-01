@@ -63,7 +63,7 @@
 		/* DSI/LVDS Hot Plug Detect on FFC (X2) */
 		pinctrl_gpio_hpd: gpio-hpd {
 			fsl,pins = <
-				SC_P_MIPI_DSI1_GPIO0_00_LSIO_GPIO1_IO31		0x20		/* SODIMM 138 */
+				IMX8QXP_MIPI_DSI1_GPIO0_00_LSIO_GPIO1_IO31		0x20		/* SODIMM 138 */
 			>;
 		};
 	};

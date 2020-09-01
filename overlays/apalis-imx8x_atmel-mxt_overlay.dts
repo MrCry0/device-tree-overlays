@@ -33,8 +33,8 @@
 		/* Apalis GPIO5+6 */
 		pinctrl_touch: touchgrp {
 			fsl,pins = <
-				SC_P_QSPI0B_SCLK_LSIO_GPIO3_IO17		0x21		/* MXM3 11 */
-				SC_P_QSPI0B_DATA0_LSIO_GPIO3_IO18		0x21		/* MXM3 13 */
+				IMX8QXP_QSPI0B_SCLK_LSIO_GPIO3_IO17		0x21		/* MXM3 11 */
+				IMX8QXP_QSPI0B_DATA0_LSIO_GPIO3_IO18		0x21		/* MXM3 13 */
 			>;
 		};
 	};

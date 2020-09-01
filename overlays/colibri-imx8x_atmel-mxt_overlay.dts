@@ -32,8 +32,8 @@
 	colibri-imx8qxp {
 		pinctrl_mxt_ts: mxt-ts {
 			fsl,pins = <
-				SC_P_QSPI0B_DATA2_LSIO_GPIO3_IO20		0x20		/* SODIMM 107 */
-				SC_P_QSPI0B_SS1_B_LSIO_GPIO3_IO24		0x20		/* SODIMM 106 */
+				IMX8QXP_QSPI0B_DATA2_LSIO_GPIO3_IO20		0x20		/* SODIMM 107 */
+				IMX8QXP_QSPI0B_SS1_B_LSIO_GPIO3_IO24		0x20		/* SODIMM 106 */
 			>;
 		};
 	};

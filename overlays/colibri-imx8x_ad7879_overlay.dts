@@ -38,7 +38,7 @@
 		/* On-module touch pen-down interrupt */
 		pinctrl_ad7879_int: ad7879-int {
 			fsl,pins = <
-				SC_P_MIPI_CSI0_I2C0_SCL_LSIO_GPIO3_IO05		0x21
+				IMX8QXP_MIPI_CSI0_I2C0_SCL_LSIO_GPIO3_IO05	0x21
 			>;
 		};
 	};
