@@ -9,7 +9,9 @@
 
 / {
 	compatible = "toradex,verdin-imx8mm";
+};
 
+&{/} {
 	backlight {
 		compatible = "pwm-backlight";
 		brightness-levels = <0 45 63 88 119 158 203 255>;
