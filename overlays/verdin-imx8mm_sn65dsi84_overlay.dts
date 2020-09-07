@@ -16,10 +16,12 @@
 		compatible = "pwm-backlight";
 		brightness-levels = <0 45 63 88 119 158 203 255>;
 		default-brightness-level = <4>;
+		/* Verdin MEZ_DSI_1_BKL_EN (SODIMM 21) */
 		enable-gpios = <&gpio3 3 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_dsi_bkl_en>;
+		pinctrl-0 = <&pinctrl_mez_dsi_1_bkl_en>;
 		power-supply = <&reg_3p3v>;
+		/* Verdin MEZ_PWM_3_DSI (SODIMM 19) */
 		pwms = <&pwm1 0 6666667 PWM_POLARITY_INVERTED>;
 	};
 };
@@ -52,9 +54,10 @@
 
 	bridge@2c {
 		compatible = "ti,sn65dsi83";
+		/* Verdin MEZ_GPIO_1 (SODIMM 206) */
 		enable-gpios = <&gpio3 4 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_gpio1>;
+		pinctrl-0 = <&pinctrl_mez_gpio1>;
 		reg = <0x2c>;
 		ti,dsi-lanes = <4>;
 		ti,height-mm = <136>;
@@ -93,12 +96,14 @@
 
 	touch@4a {
 		compatible = "atmel,maxtouch";
+		/* Verdin MEZ_DSI_1_INT# (SODIMM 17) */
 		interrupt-parent = <&gpio3>;
-		interrupts = <15 IRQ_TYPE_EDGE_FALLING>; /* SODIMM 17 */
+		interrupts = <15 IRQ_TYPE_EDGE_FALLING>;
 		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_gpio_hpd>, <&pinctrl_gpio2>;
+		pinctrl-0 = <&pinctrl_mez_dsi_1_int_n>, <&pinctrl_mez_gpio2>;
 		reg = <0x4a>;
-		reset-gpios = <&gpio5 5 GPIO_ACTIVE_HIGH>; /* SODIMM 208 */
+		/* Verdin MEZ_GPIO_2 (SODIMM 208) */
+		reset-gpios = <&gpio5 5 GPIO_ACTIVE_HIGH>;
 	};
 };
 
