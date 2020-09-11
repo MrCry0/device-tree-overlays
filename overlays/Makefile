@@ -43,6 +43,7 @@ dtb-y += display-edt7_overlay.dtbo
 dtb-y += display-lt161010_overlay.dtbo
 dtb-y += display-lt170410_overlay.dtbo
 dtb-y += verdin-imx8mm_lt8912_overlay.dtbo
+dtb-y += verdin-imx8mm_ov5640_overlay.dtbo
 dtb-y += verdin-imx8mm_sn65dsi84_overlay.dtbo
 
 targets += $(dtb-y)
