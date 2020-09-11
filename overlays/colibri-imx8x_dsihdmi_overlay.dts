@@ -6,7 +6,7 @@
 /dts-v1/;
 /plugin/;
 / {
-	compatible = "toradex,colibri-imx8qxp";
+	compatible = "toradex,colibri-imx8x";
 };
 
 &i2c0_mipi_lvds0 {

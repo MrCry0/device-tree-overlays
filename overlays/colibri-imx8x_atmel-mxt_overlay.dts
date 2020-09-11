@@ -8,7 +8,7 @@
 #include "dt-bindings/pinctrl/pads-imx8qxp.h"
 
 / {
-	compatible = "toradex,colibri-imx8qxp";
+	compatible = "toradex,colibri-imx8x";
 };
 
 &i2c1 {
