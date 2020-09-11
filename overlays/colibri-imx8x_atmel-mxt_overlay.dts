@@ -21,9 +21,9 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_mxt_ts>;
 		reg = <0x4a>;
-		interrupt-parent = <&gpio3>;
-		interrupts = <20 IRQ_TYPE_EDGE_FALLING>;	/* SODIMM 107 */
-		reset-gpios = <&gpio3 24 GPIO_ACTIVE_HIGH>;	/* SODIMM 106 */
+		interrupt-parent = <&lsio_gpio3>;
+		interrupts = <20 IRQ_TYPE_EDGE_FALLING>;		/* SODIMM 107 */
+		reset-gpios = <&lsio_gpio3 24 GPIO_ACTIVE_HIGH>;	/* SODIMM 106 */
 		status = "okay";
 	};
 };

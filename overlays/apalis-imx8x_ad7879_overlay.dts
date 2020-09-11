@@ -21,7 +21,7 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_ad7879_int>;
 		reg = <0x2c>;
-		interrupt-parent = <&gpio3>;
+		interrupt-parent = <&lsio_gpio3>;
 		interrupts = <5 IRQ_TYPE_EDGE_FALLING>;
 		touchscreen-max-pressure = <4096>;
 		adi,resistance-plate-x = <120>;
