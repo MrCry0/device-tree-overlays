@@ -1,0 +1,81 @@
+// Enable the parallel RGB interface with VGA DAC ADV7125 on Colibri iMX8X
+
+#include "dt-bindings/gpio/gpio.h"
+#include "dt-bindings/pinctrl/pads-imx8qxp.h"
+#include "dt-bindings/pwm/pwm.h"
+
+/dts-v1/;
+/plugin/;
+/ {
+	compatible = "toradex,colibri-imx8x";
+
+	vdd_3v3_vga_managed: vdd-3v3-vga-managed {
+		compatible = "regulator-fixed";
+		enable-active-high;
+                gpios = <&lsio_gpio3 12 GPIO_ACTIVE_HIGH>;
+                pinctrl-names = "default";
+                pinctrl-0 = <&pinctrl_gpio_bl_on>;
+                regulator-name = "+3.3V_AVCC_VGA_REG";
+                regulator-min-microvolt = <3300000>;
+                regulator-max-microvolt = <3300000>;
+//                regulator-settling-time-us = <10>;
+
+                regulator-state-mem {
+                        regulator-off-in-suspend;
+                };
+	};
+
+	vga {
+		compatible = "vga-connector";
+		label = "vga";
+		status = "okay";
+
+		port {
+			vga_in: endpoint {
+				remote-endpoint = <&adv7125_out>;
+			};
+		};
+	};
+
+	vga-encoder {
+		compatible = "adi,adv7125", "adi,adv7123";
+		status = "okay";
+		vdd-supply = <&vdd_3v3_vga_managed>;
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+				lcd_dac_in: endpoint {
+					remote-endpoint = <&lcd_display_out>;
+				};
+			};
+
+			port@1 {
+				reg = <1>;
+				adv7125_out: endpoint {
+					remote-endpoint = <&vga_in>;
+				};
+			};
+		};
+	};
+};
+
+&display_lcdif {
+	status = "okay";
+
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+//	pinctrl-assert-gpios = <&gpio4 19 GPIO_ACTIVE_HIGH>;
+
+	port@1 {
+		reg = <1>;
+
+		lcd_display_out: endpoint {
+			remote-endpoint = <&lcd_dac_in>;
+		};
+	};
+};
