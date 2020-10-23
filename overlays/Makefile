@@ -20,7 +20,7 @@ HOSTCC := gcc $(DTS_INCLUDES)
 PWD := $(shell pwd)
 
 dtb-y += apalis-imx6_atmel-mxt_overlay.dtbo
-dtb-y += apalis-imx6_disable-parallel-rgb_overlay.dtbo
+dtb-y += apalis-imx6_lcd_overlay.dtbo
 dtb-y += apalis-imx6_lvds_overlay.dtbo
 dtb-y += apalis-imx8_atmel-mxt_overlay.dtbo
 dtb-y += apalis-imx8_display-lt170410_overlay.dtbo
