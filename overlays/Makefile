@@ -40,6 +40,7 @@ dtb-y += colibri-imx8x_display-lt170410_overlay.dtbo
 dtb-y += colibri-imx8x_dsihdmi_overlay.dtbo
 dtb-y += display-edt5.7_overlay.dtbo
 dtb-y += display-edt7_overlay.dtbo
+dtb-y += display-fullhd_overlay.dtbo
 dtb-y += display-lt161010_overlay.dtbo
 dtb-y += display-lt170410_overlay.dtbo
 dtb-y += verdin-imx8mm_lt8912_overlay.dtbo
