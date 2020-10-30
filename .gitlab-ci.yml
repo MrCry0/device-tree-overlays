@@ -1,0 +1,22 @@
+variables:
+# uncomment for the pipeline debug purpose
+  CI_DEBUG_TRACE: "true"
+  CI_IMAGE: gitlab.int.toradex.com:4567/philippe.schenker/linux-toradex/ci-kernel-builder:gcc9
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+
+stages:
+  - empty-stub
+
+prepare_kernel:
+  stage: empty-stub
+  image: $CI_IMAGE
+  variables:
+    GIT_STRATEGY: fetch
+    GIT_DEPTH: "1"
+  script: |
+    echo "Just return true. For now it is too tough to implement a real overlay checking."
+    echo "It depends on possibly unmerged changes in the corresponding branch of linux kernel."
+    true
+
