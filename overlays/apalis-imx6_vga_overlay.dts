@@ -1,0 +1,17 @@
+// Enable the VGA interface on the Apalis iMX6Q
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,apalis_imx6q";
+};
+
+&vdac {
+    status = "okay";
+};
+
+&mxcfb4 {
+    status = "okay";
+};
+
