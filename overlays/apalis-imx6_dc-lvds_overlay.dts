@@ -1,0 +1,30 @@
+// Enable the Dual-Channel LVDS interface on the Apalis iMX6Q. Make sure to also select a valid display configuration.
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,apalis_imx6q";
+};
+
+&backlight {
+	status = "okay";
+};
+
+&ldb {
+	dual-mode;
+	status = "okay";
+
+	lvds-channel@0 {
+		status = "okay";
+
+		display-timings {
+			native-mode = <&timing_fullhd>;
+		};
+	};
+};
+
+&mxcfb1 {
+	status = "okay";
+};
+
