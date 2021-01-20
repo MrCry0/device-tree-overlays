@@ -25,6 +25,7 @@ dtb-y += apalis-imx6_lcd_overlay.dtbo
 dtb-y += apalis-imx6_lvds_overlay.dtbo
 dtb-y += apalis-imx6_stmpe-ts_overlay.dtbo
 dtb-y += apalis-imx6_vga_overlay.dtbo
+dtb-y += apalis-imx6_fusion-f0710a_overlay.dtbo
 dtb-y += apalis-imx8_ar0521_overlay.dtbo
 dtb-y += apalis-imx8_atmel-mxt_overlay.dtbo
 dtb-y += apalis-imx8_lvds_overlay.dtbo
