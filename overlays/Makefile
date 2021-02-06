@@ -34,6 +34,7 @@ dtb-y += colibri-imx6_parallel-rgb_overlay.dtbo
 dtb-y += colibri-imx6_stmpe-ts_overlay.dtbo
 dtb-y += colibri-imx7-aster_atmel-mxt_overlay.dtbo
 dtb-y += colibri-imx7-eval_atmel-mxt_overlay.dtbo
+dtb-y += colibri-imx7_parallel-rgb_overlay.dtbo
 dtb-y += display-edt5.7_overlay.dtbo
 dtb-y += display-edt7_overlay.dtbo
 dtb-y += display-lt161010_overlay.dtbo
