@@ -28,6 +28,7 @@ dtb-y += apalis-imx6_vga_overlay.dtbo
 dtb-y += apalis-imx6_fusion-f0710a_overlay.dtbo
 dtb-y += apalis-imx8_ar0521_overlay.dtbo
 dtb-y += apalis-imx8_atmel-mxt_overlay.dtbo
+dtb-y += apalis-imx8_hdmi_overlay.dtbo
 dtb-y += apalis-imx8_lvds_overlay.dtbo
 dtb-y += apalis-imx8_ov5640_overlay.dtbo
 dtb-y += apalis-imx8_ov5640-2_overlay.dtbo
