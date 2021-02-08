@@ -3,16 +3,11 @@
 /dts-v1/;
 /plugin/;
 
-#include "dt-bindings/pwm/pwm.h"
-
 / {
 	compatible = "toradex,apalis-imx8x";
 };
 
 &backlight {
-	brightness-levels = <0 45 63 88 119 158 203 255>;
-	default-brightness-level = <4>;
-	pwms = <&pwm_mipi_lvds1 0 6666667 PWM_POLARITY_INVERTED>;
 	status = "okay";
 };
 
@@ -32,4 +27,3 @@
 &pwm_mipi_lvds1 {
 	status = "okay";
 };
-
