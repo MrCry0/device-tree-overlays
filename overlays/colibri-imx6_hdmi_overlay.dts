@@ -1,0 +1,37 @@
+// Enable the HDMI interface on the Colibri iMX6DL
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,colibri_imx6dl";
+};
+
+&hdmi_audio {
+	status = "okay";
+};
+
+&hdmi_ddc {
+	status = "okay";
+};
+
+&hdmi_core {
+	status = "okay";
+};
+
+&hdmi_video {
+	status = "okay";
+};
+
+&i2cddc {
+	status = "okay";
+};
+
+&mxcfb2 {
+	status = "okay";
+};
+
+&sound_hdmi {
+	status = "okay";
+};
+
