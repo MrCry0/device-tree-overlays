@@ -1,0 +1,14 @@
+// Set preferred Full-HD mode for HDMI monitor for Apalis-iMX6Q/Colibri-iMX6DL
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,apalis_imx6q",
+		     "toradex,colibri_imx6dl";
+};
+
+&mxcfb2 {
+	mode_str ="1920x1080M@60";
+};
+
