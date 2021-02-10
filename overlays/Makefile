@@ -30,6 +30,7 @@ dtb-y += apalis-imx6_stmpe-ts_overlay.dtbo
 dtb-y += apalis-imx6_vga_overlay.dtbo
 dtb-y += colibri-imx6-aster_atmel-mxt_overlay.dtbo
 dtb-y += colibri-imx6-eval_atmel-mxt_overlay.dtbo
+dtb-y += colibri-imx6_hdmi_overlay.dtbo
 dtb-y += colibri-imx6_parallel-rgb_overlay.dtbo
 dtb-y += colibri-imx6_stmpe-ts_overlay.dtbo
 dtb-y += colibri-imx7_ad7879_overlay.dtbo
