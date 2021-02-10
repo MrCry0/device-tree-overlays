@@ -15,7 +15,7 @@
 &{/panel-dpi} {
 	status = "okay";
 
-	data-mapping = "rgb24";
+	data-mapping = "bgr666";
 
 	width-mm = <217>;
 	height-mm = <136>;
