@@ -34,6 +34,10 @@
 	status = "okay";
 };
 
+&ml_vipsi {
+	status = "okay";
+};
+
 &mipi_dsi {
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -53,7 +57,7 @@
 	status = "okay";
 };
 
-&ml_vipsi {
-	status = "okay";
+&pwm3 {
+	/* PWM 3 conflicts with the HPD signal from the adapter */
+	status = "disabled";
 };
-
