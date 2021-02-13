@@ -9,42 +9,23 @@
 	compatible = "toradex,verdin-imx8mm";
 };
 
-&{/soc@0/bus@32c00000/display-subsystem} {
+&gpu {
 	status = "okay";
+};
+
+&hdmi_lontium_lt8912 {
+	status = "okay";
+
+	port {
+		lt8912_1_in: endpoint {
+			remote-endpoint = <&mipi_dsi_bridge1_out>;
+		};
+	};
 };
 
 /* Verdin I2C_2_DSI */
 &i2c2 {
-	clock-frequency = <10000>;
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_i2c2>;
 	status = "okay";
-};
-
-/* Verdin I2C_1 */
-&i2c4 {
-	#address-cells = <1>;
-	#size-cells = <0>;
-	status = "okay";
-
-	hdmi@48 {
-		compatible = "lontium,lt8912";
-		ddc-i2c-bus = <&i2c2>;
-		/* Verdin MEZ_DSI_1_INT HPD (SODIMM 17) shared with MEZ_GPIO_1 (SODIMM 206) */
-		hpd-gpios = <&gpio3 15 GPIO_ACTIVE_HIGH>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_mez_dsi_1_int_hpd>, <&pinctrl_mez_gpio1>,
-			    <&pinctrl_mez_gpio2>;
-		reg = <0x48>;
-		/* Verdin MEZ_GPIO_2 (SODIMM 208) */
-		reset-gpios = <&gpio5 5 GPIO_ACTIVE_LOW>;
-
-		port {
-			lt8912_1_in: endpoint {
-				remote-endpoint = <&mipi_dsi_bridge1_out>;
-			};
-		};
-	};
 };
 
 &lcdif {
@@ -64,8 +45,4 @@
 			attach-bridge;
 		};
 	};
-};
-
-&gpu {
-	status = "okay";
 };

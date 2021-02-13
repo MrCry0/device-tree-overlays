@@ -1,0 +1,13 @@
+// Atmel MXT touchscreen for the 7inch and 10inch display orderable at Toradex.
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,verdin-imx8mm",
+		     "toradex,verdin-imx8mp";
+};
+
+&atmel_mxt_ts {
+	status = "okay";
+};
