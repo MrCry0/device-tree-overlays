@@ -1,0 +1,33 @@
+// VGA display with a resolution of 640x480 pixel. VGA Signal 640x480@60Hz Industry standard timing
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "toradex,apalis_imx6q",
+		     "toradex,apalis-imx8x",
+		     "toradex,colibri_imx6dl",
+		     "toradex,colibri-imx6ull",
+		     "toradex,colibri-imx7d",
+		     "toradex,colibri-imx7s",
+		     "toradex,colibri-imx8x";
+};
+
+&{/panel-dpi} {
+	status = "okay";
+	/* for 0.3mm pixels */
+	width-mm = <192>;
+	height-mm = <144>;
+	panel-timing {
+		clock-frequency = <25175000>;
+		hactive = <640>;
+		vactive = <480>;
+		hsync-len = <96>;
+		hfront-porch = <16>;
+		hback-porch = <48>;
+		vsync-len = <2>;
+		vfront-porch = <10>;
+		vback-porch = <33>;
+	 };
+};
+
