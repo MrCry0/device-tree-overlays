@@ -43,6 +43,7 @@ dtb-y += display-edt7_overlay.dtbo
 dtb-y += display-fullhd_overlay.dtbo
 dtb-y += display-lt161010_overlay.dtbo
 dtb-y += display-lt170410_overlay.dtbo
+dtb-y += display-vga_overlay.dtbo
 
 targets += $(dtb-y)
 always  := $(dtb-y)
