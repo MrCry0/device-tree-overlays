@@ -29,10 +29,6 @@
 	};
 };
 
-&atmel_maxtouch {
-	status = "okay";
-};
-
 /* LCDIF to MIPI-DSI */
 &lcdif1 {
 	status = "okay";
