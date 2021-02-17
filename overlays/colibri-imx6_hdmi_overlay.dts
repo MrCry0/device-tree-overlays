@@ -28,6 +28,7 @@
 };
 
 &mxcfb2 {
+	mode_str ="1920x1080M@60";
 	status = "okay";
 };
 
