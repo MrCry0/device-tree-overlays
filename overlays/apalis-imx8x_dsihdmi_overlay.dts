@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
+/*
+ * Copyright 2020-2021 Toradex
+ */
+
 // Turn on a an HDMI interface on Apalis-iMX8X
 
 /dts-v1/;
