@@ -54,6 +54,7 @@ dtb-y += colibri-imx7_fusion-f0710a-adapter_overlay.dtbo
 dtb-y += colibri-imx7_fusion-f0710a-connector_overlay.dtbo
 dtb-y += colibri-imx7-eval_spidev_overlay.dtbo
 dtb-y += colibri-imx7_lcd-lt161010_overlay.dtbo
+dtb-y += colibri-imx7_lcd-vga_overlay.dtbo
 dtb-y += colibri-imx8x-eval_spidev_overlay.dtbo
 dtb-y += colibri-imx8x_ad7879_overlay.dtbo
 dtb-y += colibri-imx8x_atmel-mxt-adapter_overlay.dtbo
