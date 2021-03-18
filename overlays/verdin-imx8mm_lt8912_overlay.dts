@@ -8,8 +8,6 @@
 /dts-v1/;
 /plugin/;
 
-#include <dt-bindings/gpio/gpio.h>
-
 / {
 	compatible = "toradex,verdin-imx8mm";
 };
