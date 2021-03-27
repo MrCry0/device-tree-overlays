@@ -24,6 +24,7 @@
 	/* for 0.3mm pixels */
 	width-mm = <192>;
 	height-mm = <144>;
+
 	panel-timing {
 		clock-frequency = <25175000>;
 		hactive = <640>;

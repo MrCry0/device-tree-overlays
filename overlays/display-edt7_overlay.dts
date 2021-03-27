@@ -23,6 +23,7 @@
 	status = "okay";
 	width-mm = <155>;
 	height-mm = <91>;
+
 	panel-timing {
 		clock-frequency = <33230769>;
 		hactive = <800>;
