@@ -13,6 +13,7 @@
 		     "toradex,apalis-imx8x",
 		     "toradex,colibri_imx6dl",
 		     "toradex,colibri-imx7d",
+		     "toradex,colibri-imx7d-emmc",
 		     "toradex,colibri-imx7s",
 		     "toradex,colibri-imx8x";
 };
