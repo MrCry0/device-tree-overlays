@@ -22,6 +22,7 @@ PWD := $(shell pwd)
 dtb-y += apalis-imx6_atmel-mxt_overlay.dtbo
 dtb-y += apalis-imx6_fusion-f0710a_overlay.dtbo
 dtb-y += apalis-imx6_hdmi_overlay.dtbo
+dtb-y += apalis-imx6_lcd-edt7_overlay.dtbo
 dtb-y += apalis-imx6_lcd-lt161010_overlay.dtbo
 dtb-y += apalis-imx6_lvds-lt170410_overlay.dtbo
 dtb-y += apalis-imx6_stmpe-ts_overlay.dtbo
