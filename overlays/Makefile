@@ -45,6 +45,7 @@ dtb-y += colibri-imx6-eval_spidev_overlay.dtbo
 dtb-y += colibri-imx6_fusion-f0710a-adapter_overlay.dtbo
 dtb-y += colibri-imx6_fusion-f0710a-connector_overlay.dtbo
 dtb-y += colibri-imx6_hdmi_overlay.dtbo
+dtb-y += colibri-imx6_lcd-edt7_overlay.dtbo
 dtb-y += colibri-imx6_lcd-lt161010_overlay.dtbo
 dtb-y += colibri-imx6_lcd-lt170410_overlay.dtbo
 dtb-y += colibri-imx6_lcd-vga_overlay.dtbo
