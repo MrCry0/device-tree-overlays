@@ -55,6 +55,7 @@ dtb-y += colibri-imx7_disable-uart-b_overlay.dtbo
 dtb-y += colibri-imx7-eval_spidev_overlay.dtbo
 dtb-y += colibri-imx7_fusion-f0710a-adapter_overlay.dtbo
 dtb-y += colibri-imx7_fusion-f0710a-connector_overlay.dtbo
+dtb-y += colibri-imx7_lcd-edt7_overlay.dtbo
 dtb-y += colibri-imx7_lcd-lt161010_overlay.dtbo
 dtb-y += colibri-imx7_lcd-lt170410_overlay.dtbo
 dtb-y += colibri-imx7_lcd-vga_overlay.dtbo
