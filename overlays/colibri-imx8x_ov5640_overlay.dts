@@ -35,7 +35,7 @@
 		pinctrl-0 = <&pinctrl_csi_ctl>, <&pinctrl_csi_mclk>;
 		powerdown-gpios = <&lsio_gpio3 14 GPIO_ACTIVE_HIGH>;	/* X3-22 */
 		reg = <0x3c>;
-		reset-gpios = <&lsio_gpio3 15 GPIO_ACTIVE_LOW>;		/* X3-23 */
+		reset-gpios = <&lsio_gpio3 15 GPIO_ACTIVE_LOW>;		/* X3-11 */
 		status = "okay";
 
 		port {
