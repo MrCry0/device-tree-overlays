@@ -31,6 +31,7 @@ dtb-y += apalis-imx6_stmpe-ts_overlay.dtbo
 dtb-y += apalis-imx6_vga_overlay.dtbo
 dtb-y += apalis-imx8_ar0521_overlay.dtbo
 dtb-y += apalis-imx8_atmel-mxt_overlay.dtbo
+dtb-y += apalis-imx8_mezzanine-can_overlay.dtbo
 dtb-y += apalis-imx8_hdmi_overlay.dtbo
 dtb-y += apalis-imx8_lvds_overlay.dtbo
 dtb-y += apalis-imx8_lvds_overlay_2.dtbo
